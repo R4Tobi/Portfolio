@@ -3,6 +3,27 @@ $background-light: #e2e2e2;
 $font-color-dark: #e2e2e2;
 $font-color-light: #292929;
 
+*{
+    color: $font-color-dark;
+}
+
+h2{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+p{
+    margin-left: 50px;
+}
+
+a{
+    transition: all ease-in-out .4s;
+}
+
+a:hover{
+    color: #646464;
+}
+
 @keyframes opacity-fade-in {
     from{opacity: 0}
     to{opacity: 1}

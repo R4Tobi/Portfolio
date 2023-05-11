@@ -26,7 +26,8 @@
 
 <script>
 export default {
-  name: 'NavHeader',
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'About',
 }
 
 function reveal() {

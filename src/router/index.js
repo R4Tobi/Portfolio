@@ -6,8 +6,8 @@ import Projects from "../views/Projects.vue";
 import Skills from "../views/Skills.vue";
 import Socials from "../views/Socials.vue";
 import AGB from "../views/AGB.vue";
-import ImpressumPrivacy from "../views/ImpressumPrivacy.vue";
-import PrivacyPrivacy from "../views/PrivacyPrivacy.vue";
+import Impressum from "../views/Impressum.vue";
+import Privacy from "../views/Privacy.vue";
 
 const routes = [
   {
@@ -41,13 +41,13 @@ const routes = [
   },
   {
     path: "/impressum",
-    name: "ImpressumPrivacy",
-    component: ImpressumPrivacy,
+    name: "Impressum",
+    component: Impressum,
   },
   {
     path: "/privacy",
-    name: "PrivacyPrivacy",
-    component: PrivacyPrivacy,
+    name: "Privacy",
+    component: Privacy,
   },
   {
     path: "/agb",

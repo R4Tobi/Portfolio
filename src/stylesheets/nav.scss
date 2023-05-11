@@ -94,6 +94,19 @@ footer{
     }
 }
 
+
+.reveal{
+  position: relative;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media screen and (max-width: 950px){
     //mobile design
 }
