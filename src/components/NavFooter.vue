@@ -1,14 +1,13 @@
 <template>
-<p>Socials</p>
+  <footer></footer>
 </template>
 
 <script>
 export default {
-  name: 'NavHeader',
+  name: 'NavFooter',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import "../stylesheets/main.scss";
 </style>

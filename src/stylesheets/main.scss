@@ -1,0 +1,14 @@
+$background-dark: #292929;
+$background-light: #e2e2e2;
+$font-color-dark: #e2e2e2;
+$font-color-light: #292929;
+
+@keyframes opacity-fade-in {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes transform-y-fade-in{
+    from{transform: translateY(100vh)}
+    to{transform: translateY(0px)}
+}

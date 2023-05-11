@@ -1,15 +1,18 @@
 <template>
   <NavHeader />
   <router-view />
+  <NavFooter />
 </template>
 
 <script>
 import NavHeader from './components/NavHeader.vue'
+import NavFooter from './components/NavFooter.vue'
 
 export default {
   name: 'App',
   components: {
     NavHeader,
+    NavFooter,
   }
 }
 </script>
@@ -22,6 +25,7 @@ export default {
 html, body{
   margin: 0;
   padding: 0;
+  background: #292929;
 }
 
 #app {
