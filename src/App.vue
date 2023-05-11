@@ -1,5 +1,6 @@
 <template>
   <NavHeader />
+  <router-view />
 </template>
 
 <script>
@@ -8,7 +9,7 @@ import NavHeader from './components/NavHeader.vue'
 export default {
   name: 'App',
   components: {
-    NavHeader
+    NavHeader,
   }
 }
 </script>

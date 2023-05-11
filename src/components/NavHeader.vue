@@ -1,12 +1,13 @@
 <template>
   <div class="nav">
-    <div class="left">To Be. Web Solutions.</div>
+    <div class="left">To Be. <span>Web Solutions.</span></div>
     <div class="right">
       <ul>
-        <li>Über mich</li>        
-        <li>Projekte</li>        
-        <li>Socials</li>        
-        <li>Skills</li>        
+        <li><router-link to="/home">Über Mich</router-link></li>
+        <li><router-link to="/projects">Projekte</router-link></li>
+        <li><router-link to="/skills">Skills</router-link></li>
+        <li><router-link to="/socials">Socials</router-link></li>
+        <li><router-link to="/contact">Kontakt</router-link></li>
       </ul>
     </div>
   </div>
@@ -15,13 +16,10 @@
 <script>
 export default {
   name: 'NavHeader',
-  props: {
-    urls: Array
-  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../stylesheets/nav.scss";
 </style>

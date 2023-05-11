@@ -1,0 +1,14 @@
+<template>
+<p>Skills</p>
+</template>
+
+<script>
+export default {
+  name: 'NavHeader',
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+@import "../stylesheets/nav.scss";
+</style>
