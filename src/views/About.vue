@@ -7,15 +7,17 @@
     Web Solutions.
     <span>Design & Development</span>
   </div>
-  <div class="content">
+  <div class="content-1">
     <div class="left image"></div>
     <div class="right text">
+      <h2 class="reveal">To Be.<br /> Web Solutions.</h2>
       <p class="reveal">
-        To Be. Web Solutions.<br/>
         Das ist nicht nur unser Name, sondern auch unser Motto.<br /> 
         Wer entwickeln will, dem muss der Code durch die Adern fließen.<br />
-        Das verleiht dem Projekt Charakter und macht es einzigartig.<br />
-        Du bist interessiert an einer Website? Dann fackel nicht lange und kontaktiere uns!
+        Das verleiht deinem Projekt Charakter und macht es einzigartig.<br />
+        Wir helfen dir das passende Design zu finden oder bereits bestehende Designs umzusetzen.<br /><br />
+        Dazu geben wir ne Menge Ideen in ein Topf, filtern das beste raus und benutzen dann Vue.js um deine Website zu bauen.<br />
+        Du bist interessiert an einer Website? Dann fackel nicht lange und kontaktiere uns!<br />
       </p>
     </div>
   </div>

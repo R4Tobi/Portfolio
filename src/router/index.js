@@ -5,6 +5,9 @@ import Contact from "../views/Contact.vue";
 import Projects from "../views/Projects.vue";
 import Skills from "../views/Skills.vue";
 import Socials from "../views/Socials.vue";
+import AGB from "../views/AGB.vue";
+import ImpressumPrivacy from "../views/ImpressumPrivacy.vue";
+import PrivacyPrivacy from "../views/PrivacyPrivacy.vue";
 
 const routes = [
   {
@@ -19,22 +22,37 @@ const routes = [
   {
     path: "/projects",
     name: "Projects",
-    component: Projects
+    component: Projects,
   },
   {
     path: "/skills",
     name: "Skills",
-    component: Skills
+    component: Skills,
   },
   {
     path: "/socials",
     name: "Socials",
-    component: Socials
+    component: Socials,
   },
   {
     path: "/contact",
     name: "Contact",
-    component: Contact
+    component: Contact,
+  },
+  {
+    path: "/impressum",
+    name: "ImpressumPrivacy",
+    component: ImpressumPrivacy,
+  },
+  {
+    path: "/privacy",
+    name: "PrivacyPrivacy",
+    component: PrivacyPrivacy,
+  },
+  {
+    path: "/agb",
+    name: "AGB",
+    component: AGB,
   },
   {
     path: "/skills",

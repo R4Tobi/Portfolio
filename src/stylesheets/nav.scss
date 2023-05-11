@@ -43,7 +43,7 @@ $transition: .2s all ease-in-out;
                 margin-left: $abs;
                 a{
                     text-decoration: none;
-                    color: #e2e2e2;
+                    color: $font-color-dark;
                     transition: $transition;
                 }
                 a:hover{
@@ -56,4 +56,44 @@ $transition: .2s all ease-in-out;
             }
         }
     }
+}
+
+footer{
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    .container{
+        width: 200px;
+        color: $font-color-dark;
+        margin: 0 20px;
+        h3{
+            border-bottom: 1px solid $font-color-dark;
+            margin-bottom: 10px;
+        }
+        ul{
+            margin: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            li{
+                list-style-type: none;
+                margin-top: 2px;
+                a{
+                    color: $font-color-dark;
+                    text-decoration: none;
+                    transition: $transition;
+                }
+                a:hover{
+                    color: #646464;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    //mobile design
 }
