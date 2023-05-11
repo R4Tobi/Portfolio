@@ -2,7 +2,7 @@
   <div class="cards" @mousemove="handleMouseMove">
     <div class="card" v-for="card in cards" :key="card.id" :style="{ '--xPos': card.xPos, '--yPos': card.yPos }" :data-card-id="card.id">
       <div class="card-content">
-        <h3>{{ card.title }}</h3>
+        <h3>{{ card.name }}</h3>
         <p>{{ card.description }}</p>
       </div>
       <div class="card-gradient"></div>
