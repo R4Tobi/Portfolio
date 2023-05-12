@@ -22,7 +22,13 @@ export default {
   name: "Projects",
   data() {
     return {
-      cards: []
+      cards: [
+        {
+          id: 1,
+          title: "NeatBeat",
+          description: "Neatbeat ist ein Marktplatz für Produzenten, Musiker, Songwriter, Rapper, Videoproduzenten, usw."
+        }
+      ]
     };
   },
   methods: {
