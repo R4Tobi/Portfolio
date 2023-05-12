@@ -8,6 +8,7 @@ import Socials from "../views/Socials.vue";
 import AGB from "../views/AGB.vue";
 import Impressum from "../views/Impressum.vue";
 import Privacy from "../views/Privacy.vue";
+import PageNotFound from "../views/PageNotFound.vue"
 
 const routes = [
   {
@@ -22,37 +23,45 @@ const routes = [
   {
     path: "/projects",
     name: "Projects",
-    component: Projects,
+    component: Projects
   },
   {
     path: "/skills",
     name: "Skills",
-    component: Skills,
+    component: Skills
   },
   {
     path: "/socials",
     name: "Socials",
-    component: Socials,
+    component: Socials
   },
   {
     path: "/contact",
     name: "Contact",
-    component: Contact,
+    component: Contact
   },
   {
     path: "/impressum",
     name: "Impressum",
-    component: Impressum,
+    component: Impressum
   },
   {
     path: "/privacy",
     name: "Privacy",
-    component: Privacy,
+    component: Privacy
   },
   {
     path: "/agb",
     name: "AGB",
-    component: AGB,
+    component: AGB
+  },
+  {
+    path: "/404",
+    component: PageNotFound
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/404"
   },
   {
     path: "/skills",

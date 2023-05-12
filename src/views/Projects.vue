@@ -1,7 +1,7 @@
 <template>
   <div class="cards" @mousemove="handleMouseMove">
     <div
-      class="card"
+      class="card reveal"
       v-for="card in cards"
       :key="card.id"
       :style="{ '--xPos': card.xPos, '--yPos': card.yPos }"

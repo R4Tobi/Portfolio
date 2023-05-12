@@ -108,6 +108,7 @@
                 color: $font-color-dark;
                 font-weight: bold;
                 font-size: 70px;
+                padding-left: 10px;
                 animation: transform-y-fade-in 1s ease-in-out;
             
                 span {
@@ -127,12 +128,7 @@
             z-index: 2;
 
             .image {
-                background: url("../assets/background2.jpg");
-                background-position: center;
-                background-size: cover;
-                background-attachment: scroll;
-                height: $height;
-                width: 50%;
+                display: none;
             }
 
             .text {
