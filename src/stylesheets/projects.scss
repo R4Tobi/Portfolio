@@ -5,19 +5,20 @@ $ciGreen: rgb(0,212,255);
 $ciSecond: #292929;
 
 .cards {
+	color: #e2e2e2;
     margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	gap: 0.5rem;
-	width: 90%;
+	width: 100%;
 	padding: 2rem;
 	&:hover {
 		.card {
 			background: radial-gradient(
-				100rem circle at var(--xPos) var(--yPos),
+				70rem circle at var(--xPos) var(--yPos),
 				rgba($ciBlue, 0.4),
 				transparent 15%
 			);
@@ -66,9 +67,61 @@ $ciSecond: #292929;
 			background-color: #13161c;
 			border-radius: inherit;
 			transition: all 0.25s;
-			height: calc(100% - 0.1rem);
-			width: calc(100% - 0.1rem);
+			height: calc(100%);
+			width: calc(100%);
+			h3{
+				width: 100%;
+				text-align: center;
+			}
+			p{
+				width: 100%;
+				padding: 10px 20px;
+			}
 		}
 	}
 }
 
+hr{
+	width: 80%;
+	outline: none;
+	border: none;
+	height: 2px;
+	background: #e2e2e2;
+	margin: 30px auto;
+}
+
+.other{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	color: #e2e2e2;
+	.image{
+		background: url("../assets/IMG_1290.webp");
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 500px;
+        width: 50%;
+		filter: grayscale(0.5) hue-rotate(310deg) opacity(0.4);
+	}
+	.text{
+		width: 50%;
+		h3{
+			
+		}
+		p{
+			margin: 10px 20px;
+		}
+	}
+	.reveal {
+		position: relative;
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+	
+	.reveal.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

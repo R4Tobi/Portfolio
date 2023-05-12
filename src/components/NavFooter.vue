@@ -18,6 +18,14 @@
         <li><router-link to="/agb">AGB</router-link></li>
       </ul>
     </div>
+    <div class="container">
+      <h3>Externe Links</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/tobx218/">Instagram / tobx218</a></li>
+        <li><a href="https://www.github.com/R4Tobi/">Github / R4Tobi</a></li>
+        <li><a href="https://www.spotify.com/itobilp_dererste/">Spotify</a></li>
+      </ul>
+    </div>
   </footer>
 </template>
 
