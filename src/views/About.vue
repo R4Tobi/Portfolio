@@ -21,6 +21,20 @@
       </p>
     </div>
   </div>
+  <div class="content-2">
+    <div class="left text">
+      <h2 class="reveal">Über mich</h2>
+      <p class="reveal">Hi ich bin Tobi und programmire seit ca. 5 Jahren. Keine große Zahl, außer wenn man bedenkt das ich erst 18 bin.<br />
+        Mit 13 Jahren hab ich angefangen einfache Websiten mit HTML zu bauen und immer schneller kamen neue Sprachen, wie CSS oder Javascript, dazu.<br />
+        Mittlerweile bin ich 18 Jahre alt, und habe einige Fähigkeiten im Bereich Frontend (das was man sieht) und dem Backend (das was auf dem Server passiert, damit alles funktioniert) sammeln können.<br />
+        Darüber hinaus hab ich bereits Entwicklungen in Zusammenehang mit dem Raspberry Pi gemacht.<br />
+        Dazu zählen. u.a. einen Node.js Server, Apache Server, DNS-Server(Pi-Hole), PiVPN und ähnliches.
+      </p>
+    </div>
+    <div class="right image">
+      <div class="background"></div>
+    </div>
+  </div>
 </div>
 </template>
 

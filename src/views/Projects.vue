@@ -1,4 +1,8 @@
 <template>
+  <div class="information">
+    <h1>Eigene Projekte</h1>
+    <p>Als begeisterter/angehender Entwickler im Front- und Backendbereich habe ich natürlich einige Projekte offen oder erledigt.</p>
+  </div>
   <div class="cards" @mousemove="handleMouseMove">
     <div
       class="card reveal"
@@ -26,7 +30,7 @@ export default {
         {
           id: 1,
           title: "NeatBeat",
-          description: "Neatbeat ist ein Marktplatz für Produzenten, Musiker, Songwriter, Rapper, Videoproduzenten, usw."
+          description: "NeatBeat ist ein Marktplatz für Produzenten, Musiker, Songwriter, Rapper, Videoproduzenten, usw."
         }
       ]
     };
