@@ -1,9 +1,13 @@
 <template>
+  <div class="header">
+    <h1>Meine Projekte</h1>
+  </div>
   <div class="cards" @mousemove="handleMouseMove" ref="cardsContainer">
     <div class="card" v-for="(item, index) in items" :key="index">
       <div class="card-content">
         <h2>{{ item.title }}</h2>
         <p>{{ item.description }}</p>
+        <hr />
       </div>
     </div>
   </div>

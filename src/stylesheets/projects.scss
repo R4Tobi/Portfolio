@@ -1,9 +1,20 @@
 $prime: #ff6e48;
-$ciBlue: #00fff1;
+$ciBlue: #0099ff;
 $ciRed: #ff00aa;
 $ciWhite: #ffffff;
-$ciGreen: #46fcb4;
+$ciGreen: #4670fc;
 $ciSecond: #0c1016;
+
+@keyframes fade-in{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
 
 .cards {
 	display: flex;
@@ -12,8 +23,10 @@ $ciSecond: #0c1016;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	width: 90%;
+	width: 100%;
 	padding: 2rem;
+	opacity: 1;
+	animation: fade-in ease-in-out 1s;
 
 	&:hover {
 		.card {
@@ -75,6 +88,27 @@ $ciSecond: #0c1016;
 			transition: all 0.25s;
 			height: calc(100% - 0.1rem);
 			width: calc(100% - 0.1rem);
+			color: #e2e2e2;
+
+			h2{
+				width: 100%;
+				padding: 10px 20px;
+			} 
+			
+			p{
+				width: 100%;
+				color: #aaaaaa;
+				padding: 0 20px 0 25px;
+				font-size: smaller;
+			}
+			hr{
+				width: 80%;
+				outline: none;
+				border: none;
+				background: #424242;
+				height: 2px;
+				border-radius: 2px;
+			}
 		}
 	}
 }
