@@ -1,21 +1,10 @@
 <template>
-  <div class="information">
-    <h1>Eigene Projekte</h1>
-    <p>Als begeisterter/angehender Entwickler im Front- und Backendbereich habe ich natürlich einige Projekte offen oder erledigt.</p>
-  </div>
-  <div class="cards" @mousemove="handleMouseMove">
-    <div
-      class="card reveal"
-      v-for="card in cards"
-      :key="card.id"
-      :style="{ '--xPos': card.xPos, '--yPos': card.yPos }"
-      :data-card-id="card.id"
-    >
+  <div class="cards" @mousemove="handleMouseMove" ref="cardsContainer">
+    <div class="card" v-for="(item, index) in items" :key="index">
       <div class="card-content">
-        <h3>{{ card.title }}</h3>
-        <p>{{ card.description }}</p>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
       </div>
-      <div class="card-gradient"></div>
     </div>
   </div>
 </template>
@@ -26,62 +15,41 @@ export default {
   name: "Projects",
   data() {
     return {
-      cards: [
-        {
-          id: 1,
-          title: "NeatBeat",
-          description: "NeatBeat ist ein Marktplatz für Produzenten, Musiker, Songwriter, Rapper, Videoproduzenten, usw."
-        }
-      ]
+      items: [
+      ],
+      hoveredIndex: null,
     };
   },
   methods: {
     handleMouseMove(event) {
-      const cardId = Number(event.target.dataset.cardId);
-      if (cardId) {
-        const rect = event.target.getBoundingClientRect();
+      this.cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
         const x = event.clientX - rect.left;
         const y = event.clientY - rect.top;
-        this.cards.forEach((card) => {
-          if (card.id === cardId) {
-            card.xPos = `${x}px`;
-            card.yPos = `${y}px`;
-          } else {
-            card.xPos = "-200px";
-            card.yPos = "-200px";
-          }
-        });
-      } else {
-        this.cards.forEach((card) => {
-          card.xPos = "-200px";
-          card.yPos = "-200px";
-        });
-      }
+
+        card.style.setProperty("--xPos", `${x}px`);
+        card.style.setProperty("--yPos", `${y}px`);
+      });
     },
-    async updateCardData() {
-      try {
-        const response = await fetch(
-          "https://api.github.com/users/r4tobi/repos"
-        );
+    async addCard() {
+
+      const response = await fetch("https://api.github.com/users/r4tobi/repos");
         const jsonData = await response.json();
-        for (let index = 0; index < jsonData.length; index++) {
-          const newCard = {
-            id: this.cards.length + 1,
-            xPos: 0,
-            yPos: 0,
-            title: jsonData[index].name,
-            description: jsonData[index].description
-          };
-          this.cards.push(newCard);
+        for(let index = 0; index < jsonData.length; index++){
+          const newCard = {title: jsonData[index].name, description: jsonData[index].description };
+          this.items.push(newCard);
         }
-      } catch (error) {
-        console.error(error);
-      }
-    }
+    },
+    
   },
   mounted() {
-    this.updateCardData();
-  }
+    this.cards = document.querySelectorAll(".card");
+    this.wrapper = document.querySelector(".cards");
+    this.addCard();
+  },
+  updated() {
+    this.cards = document.querySelectorAll(".card");
+  },
 };
 
 function reveal() {

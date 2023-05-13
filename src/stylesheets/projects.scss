@@ -1,39 +1,23 @@
-$ciBlue: rgb(20, 131, 182);
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
 $ciWhite: #ffffff;
-$ciGreen: rgb(0, 212, 255);
-$ciSecond: #292929;
-
-.information {
-	h1 {
-		margin-top: 100px;
-		width: 100%;
-		padding: 0 100px;
-		color: #e2e2e2;
-	}
-
-	p {
-		margin-top: 20px;
-		width: 100%;
-		padding: 0 100px;
-		color: #e2e2e2;
-	}
-}
+$ciGreen: #46fcb4;
+$ciSecond: #0c1016;
 
 .cards {
-	color: #e2e2e2;
-	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	width: 100%;
+	width: 90%;
 	padding: 2rem;
 
 	&:hover {
 		.card {
-			background: radial-gradient(70rem circle at var(--xPos) var(--yPos),
+			background: radial-gradient(100rem circle at var(--xPos) var(--yPos),
 					rgba($ciBlue, 0.4),
 					transparent 15%);
 		}
@@ -51,13 +35,19 @@ $ciSecond: #292929;
 		align-items: center;
 		position: relative;
 		transition: all 0.15s;
-		background-repeat: no-repeat;
-		background-position: var(--xPos) var(--yPos);
 
-		/* use --xPos and --yPos here */
-		/* other styles */
 		&:hover {
 			transform: scale(0.97);
+
+			&::before {
+				opacity: 1;
+			}
+		}
+
+		&.hovered {
+			background: radial-gradient(100rem circle at var(--xPos) var(--yPos),
+					rgba($ciBlue, 0.4),
+					transparent 15%);
 
 			&::before {
 				opacity: 1;
@@ -73,8 +63,8 @@ $ciSecond: #292929;
 			left: 0;
 			border-radius: inherit;
 			background: radial-gradient(60rem circle at var(--xPos) var(--yPos),
-					rgba($ciBlue, 0.1),
-					transparent 35%);
+						rgba($ciBlue, 0.1),
+						transparent 35%);
 			opacity: 0;
 			transition: all 0.15s ease-in-out;
 		}
@@ -83,18 +73,8 @@ $ciSecond: #292929;
 			background-color: #13161c;
 			border-radius: inherit;
 			transition: all 0.25s;
-			height: 100%;
-			width: 100%;
-
-			h3 {
-				width: 100%;
-				text-align: center;
-			}
-
-			p {
-				width: 100%;
-				padding: 10px 20px;
-			}
+			height: calc(100% - 0.1rem);
+			width: calc(100% - 0.1rem);
 		}
 	}
 }
