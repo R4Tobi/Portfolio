@@ -35,7 +35,7 @@ export default {
         card.style.setProperty("--yPos", `${y}px`);
       });
     },
-    async addCard() {
+    async addCards() {
 
       const response = await fetch("https://api.github.com/users/r4tobi/repos");
         const jsonData = await response.json();
@@ -49,7 +49,7 @@ export default {
   mounted() {
     this.cards = document.querySelectorAll(".card");
     this.wrapper = document.querySelector(".cards");
-    this.addCard();
+    this.addCards();
   },
   updated() {
     this.cards = document.querySelectorAll(".card");
