@@ -5,6 +5,10 @@ import Contact from "../views/Contact.vue";
 import Projects from "../views/Projects.vue";
 import Skills from "../views/Skills.vue";
 import Socials from "../views/Socials.vue";
+import AGB from "../views/AGB.vue";
+import Impressum from "../views/Impressum.vue";
+import Privacy from "../views/Privacy.vue";
+import PageNotFound from "../views/PageNotFound.vue"
 
 const routes = [
   {
@@ -35,6 +39,29 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact
+  },
+  {
+    path: "/impressum",
+    name: "Impressum",
+    component: Impressum
+  },
+  {
+    path: "/privacy",
+    name: "Privacy",
+    component: Privacy
+  },
+  {
+    path: "/agb",
+    name: "AGB",
+    component: AGB
+  },
+  {
+    path: "/404",
+    component: PageNotFound
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/404"
   },
   {
     path: "/skills",

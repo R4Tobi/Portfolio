@@ -1,11 +1,14 @@
 <template>
-<p>Skills</p>
+<h2>Allgemeine Geschäftsbedingungen</h2>
+<p>
+  
+</p>
 </template>
 
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Skills',
+  name: 'AGB',
 }
 </script>
 
