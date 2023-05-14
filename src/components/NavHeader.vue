@@ -34,8 +34,10 @@
 
 <script>
 export default {
-  name: "NavHeader"
-};
+  name: "NavHeader",
+}
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -21,7 +21,7 @@ $transition: .2s all ease-in-out;
     top: 0;
     z-index: 1000;
 
-    button{
+    button {
         display: none;
     }
 
@@ -49,6 +49,10 @@ $transition: .2s all ease-in-out;
                 list-style-type: none;
                 display: inline;
                 margin-left: $abs;
+
+                .router-link-active {
+                    color: #60dfff;
+                }
 
                 a {
                     text-decoration: none;
@@ -247,6 +251,7 @@ footer {
             ul {
                 margin: 0;
                 padding: 0;
+
                 li {
                     list-style-type: none;
                     display: block;
@@ -260,7 +265,7 @@ footer {
                         text-decoration: none;
                         color: $font-color-dark;
                         transition: $transition;
-                        
+
                     }
 
                     a:hover {
@@ -268,7 +273,8 @@ footer {
 
                     }
                 }
-                li:hover{
+
+                li:hover {
                     background: #12172b;
                 }
 
