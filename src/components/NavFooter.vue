@@ -3,7 +3,7 @@
     <hr class="first" />
     <div class="urls">
       <div class="container image">
-        <img src="../assets/logo-light.svg" />
+        <img src="../assets/logo-light.png" />
       </div>
       <div class="container">
         <h3>Seitenlinks</h3>

@@ -153,8 +153,9 @@ footer {
         }
 
         .container.image {
-            height: 125px;
-            margin-top: -200px;
+            img {
+                height: 175px;
+            }
         }
     }
 }
@@ -371,19 +372,12 @@ footer {
                     }
                 }
             }
+            .container.img{
+                img{
+                    margin-top: 20px;
+                }
+            }
         }
 
-    }
-}
-
-@media screen and (max-width: 720px) {
-    footer {
-        .urls .container.image {
-            margin-top: -50px;
-        }
-
-        hr.second{
-            margin-top: 150px;
-        }
     }
 }
