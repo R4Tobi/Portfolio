@@ -241,22 +241,28 @@
 
 @media screen and (max-width: 600px) {
     .main {
+        .bg {
+            background-position: center;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+
         .content-1 {
-            $height: 500px;
             width: 100%;
-            height: $height;
             display: flex;
             flex-direction: column;
             position: relative;
             z-index: 2;
+            height: 100vh;
 
             .image {
                 order: 2;
+                background-size: auto;
+                background-attachment: fixed;
             }
 
             .text {
                 background: $background-dark;
-                height: $height;
                 width: 100%;
                 color: $font-color-dark;
                 display: flex;
@@ -264,6 +270,7 @@
                 justify-content: baseline;
                 align-items: center;
                 order: 1;
+                height: max-content;
 
                 h2 {
                     text-align: left;
@@ -278,21 +285,15 @@
         }
 
         .content-2 {
-            $height: auto;
             width: 100%;
-            height: $height;
             display: flex;
             flex-direction: column;
             position: relative;
             z-index: 2;
 
-            .image {
-                order: 2;
-            }
-
             .text {
                 background: $background-dark;
-                height: $height;
+                height: max-content;
                 width: 100%;
                 color: $font-color-dark;
                 display: flex;
