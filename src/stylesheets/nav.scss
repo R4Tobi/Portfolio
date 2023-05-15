@@ -74,47 +74,87 @@ $transition: .2s all ease-in-out;
 }
 
 footer {
-    margin: 25px 0;
+    margin: 100px 0 50px 0;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
-    .container {
-        width: 200px;
-        color: $font-color-dark;
-        margin: 0 20px;
+    hr {
+        border: none;
+        outline: none;
+        height: 3px;
+        border-radius: 2px;
+        background: #363636;
+        width: 90%;
+        position: relative;
+        overflow: visible;
+        z-index: 4;
 
-        h3 {
-            border-bottom: 1px solid $font-color-dark;
-            margin-bottom: 10px;
+        &.first {
+            margin-bottom: 20px;
         }
 
-        ul {
-            margin: 0;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-inline-start: 0;
+        &.second {
+            margin-top: 40px;
+        }
+    }
 
-            li {
-                list-style-type: none;
-                margin-top: 2px;
+    p {
+        color: #e2e2e2;
+    }
 
-                a {
-                    color: $font-color-dark;
-                    text-decoration: none;
-                    transition: $transition;
-                }
+    .urls {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
-                a:hover {
-                    color: #646464;
-                }
+        .container {
+            width: 200px;
+            color: $font-color-dark;
+            margin: 0 20px;
+
+            h3 {
+                border-bottom: 1px solid $font-color-dark;
+                margin-bottom: 10px;
             }
 
-            li:not(:first-child)::before {
-                content: "";
-                margin-right: 0;
+            ul {
+                margin: 0;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0;
+
+                li {
+                    list-style-type: none;
+                    margin-top: 2px;
+
+                    a {
+                        color: $font-color-dark;
+                        text-decoration: none;
+                        transition: $transition;
+                    }
+
+                    a:hover {
+                        color: #646464;
+                    }
+                }
+
+                li:not(:first-child)::before {
+                    content: "";
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .container.image {
+            img {
+                height: 175px;
             }
         }
     }
@@ -275,7 +315,7 @@ footer {
                 }
 
                 li:hover {
-                    background: #12172b;
+                    background: #2c2c2c;
                 }
 
                 li:not(:first-child)::before {
@@ -290,41 +330,54 @@ footer {
         margin: 25px 0;
         width: 100%;
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
 
-        .container {
-            width: 200px;
-            color: $font-color-dark;
-            margin: 0 20px;
+        .urls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
 
-            h3 {
-                border-bottom: 1px solid $font-color-dark;
-                margin-bottom: 10px;
-            }
+            .container {
+                width: 200px;
+                color: $font-color-dark;
+                margin: 0 20px;
 
-            ul {
-                margin: 0;
-                margin-block-start: 0;
-                margin-block-end: 0;
-                padding-inline-start: 0;
+                h3 {
+                    border-bottom: 1px solid $font-color-dark;
+                    margin-bottom: 10px;
+                }
 
-                li {
-                    list-style-type: none;
-                    margin-top: 2px;
+                ul {
+                    margin: 0;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0;
 
-                    a {
-                        color: $font-color-dark;
-                        text-decoration: none;
-                        transition: $transition;
-                    }
+                    li {
+                        list-style-type: none;
+                        margin-top: 2px;
 
-                    a:hover {
-                        color: #646464;
+                        a {
+                            color: $font-color-dark;
+                            text-decoration: none;
+                            transition: $transition;
+                        }
+
+                        a:hover {
+                            color: #646464;
+                        }
                     }
                 }
             }
+            .container.img{
+                img{
+                    margin-top: 20px;
+                }
+            }
         }
+
     }
 }
