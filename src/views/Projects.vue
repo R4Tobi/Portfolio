@@ -17,10 +17,10 @@
       </div>
     </div>
   </div>
-  <div class="header">
+  <div class="header reveal">
     <h1>Weitere Projekte</h1>
   </div>
-  <div class="cards" @mousemove="handleMouseMove">
+  <div class="cards reveal" @mousemove="handleMouseMove">
     <div
       class="card"
       v-for="(otherItem, index) in otherItems"
@@ -46,7 +46,7 @@ export default {
       githubItems: [],
       otherItems: [],
       hoveredIndex: null,
-      accessToken: "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",
+      accessToken: "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",
       otherGithubRepos: [
         "https://api.github.com/repos/EinfachValle/Tierschutz-Eisenach",
         "https://api.github.com/repos/EinfachValle/NeatBeat"
@@ -109,7 +109,6 @@ export default {
           }
         });
         const jsonData = await response.json();
-        console.log(jsonData);
         const tags = await fetch(`${repoUrl}/releases`, {
           headers: {
             Authorization: "Bearer " + this.accessToken
