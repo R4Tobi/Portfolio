@@ -46,7 +46,6 @@ export default {
       githubItems: [],
       otherItems: [],
       hoveredIndex: null,
-      accessToken: "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",
       otherGithubRepos: [
         "https://api.github.com/repos/EinfachValle/Tierschutz-Eisenach",
         "https://api.github.com/repos/EinfachValle/NeatBeat"
@@ -70,21 +69,11 @@ export default {
     async addCards() {
       const response = await fetch(
         "https://api.github.com/users/r4tobi/repos",
-        {
-          headers: {
-            Authorization: "Bearer " + this.accessToken
-          }
-        }
       );
       const jsonData = await response.json();
       for (let index = 0; index < jsonData.length; index++) {
         const tags = await fetch(
           `https://api.github.com/repos/r4tobi/${jsonData[index].name}/releases`,
-          {
-            headers: {
-              Authorization: "Bearer " + this.accessToken
-            }
-          }
         );
         const jsonTag = await tags.json();
         let tagName = "no releases created yet";
@@ -104,15 +93,9 @@ export default {
       for (let index = 0; index < repoUrls.length; index++) {
         let repoUrl = repoUrls[index]
         const response = await fetch(repoUrl, {
-          headers: {
-            Authorization: "Bearer " + this.accessToken
-          }
         });
         const jsonData = await response.json();
         const tags = await fetch(`${repoUrl}/releases`, {
-          headers: {
-            Authorization: "Bearer " + this.accessToken
-          }
         });
         const jsonTag = await tags.json();
         let tagName = "no releases created yet";

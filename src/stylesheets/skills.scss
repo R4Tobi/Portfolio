@@ -47,7 +47,7 @@ $ciRed: #ff006a;
     opacity: 1;
 
     &:hover {
-        .card {
+        .card.blue {
             background: radial-gradient(100rem circle at var(--xPos) var(--yPos),
                     rgba($ciBlue, 0.4),
                     transparent 15%);
