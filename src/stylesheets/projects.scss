@@ -30,7 +30,6 @@ $ciGreen: #4670fc;
 	width: 100%;
 	padding: 2rem;
 	opacity: 1;
-	animation: fade-in ease-in-out 1s;
 
 	&:hover {
 		.card {
@@ -52,6 +51,7 @@ $ciGreen: #4670fc;
 		align-items: center;
 		position: relative;
 		transition: all 0.15s;
+		animation: fade-in ease-in-out 2s;
 
 		&:hover {
 			transform: scale(0.97);
@@ -109,4 +109,16 @@ $ciGreen: #4670fc;
 			}
 		}
 	}
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
 }
