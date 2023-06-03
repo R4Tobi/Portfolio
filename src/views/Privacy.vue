@@ -1,7 +1,7 @@
 <template>
 <h2>Datenschutz</h2>
 <p>
-  Diese website verwendet Cookies um zu funktionieren, dabei werden keine statistischen Cookies oder Daten erhoben, die das Benutzerverhalten anlysieren und spezifizieren.
+  Diese website verwendet Cookies um zu funktionieren, dabei werden keine statistischen Cookies oder Daten erhoben, die das Benutzerverhalten anlysieren und spezifizieren. Es werden keine Daten an dritte weitergegeben werden. Cookies die durch externe Websiten (wir zum Besispiel Werbung              )
 </p>
 </template>
 
