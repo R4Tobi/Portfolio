@@ -55,11 +55,12 @@ div {
   align-items: center;
 
   article {
-    width: 200px;
+    width: 360px;
     display: block;
     text-align: left;
     h2{
-      
+        color: rgba(255, 255, 255, 0.534);
+        margin-bottom: 10px;
     }
   }
 }
