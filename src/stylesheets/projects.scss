@@ -1,51 +1,66 @@
+$ciBlue: #0099ff;
+$ciGreen: #4670fc;
 
-$ciBlue: rgb(20, 131, 182);
-$ciWhite: #ffffff;
-$ciGreen: rgb(0,212,255);
-$ciSecond: #292929;
+@keyframes fade-in{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	color: #e2e2e2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h1{
+		width: 80%;
+	}
+}
 
 .cards {
-    margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	width: 90%;
+	width: 100%;
 	padding: 2rem;
+	opacity: 1;
+
 	&:hover {
 		.card {
-			background: radial-gradient(
-				100rem circle at var(--xPos) var(--yPos),
-				rgba($ciBlue, 0.4),
-				transparent 15%
-			);
+			background: radial-gradient(100rem circle at var(--xPos) var(--yPos),
+					rgba($ciBlue, 0.4),
+					transparent 15%);
 		}
 	}
+
 	.card {
 		width: 20rem;
 		height: 15rem;
-		background: radial-gradient(
-			150rem circle at 0 0,
-			rgba($ciBlue, 0),
-			transparent 0%
-		);
+		background: radial-gradient(150rem circle at 0 0,
+				rgba($ciBlue, 0),
+				transparent 0%);
 		border-radius: 0.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: relative;
 		transition: all 0.15s;
-        background-repeat: no-repeat;
-        background-position: var(--xPos) var(--yPos); /* use --xPos and --yPos here */
-  /* other styles */
+		animation: fade-in ease-in-out 2s;
+
 		&:hover {
 			transform: scale(0.97);
+
 			&::before {
 				opacity: 1;
 			}
 		}
+
 		&::before {
 			content: "";
 			height: 100%;
@@ -54,21 +69,56 @@ $ciSecond: #292929;
 			top: 0;
 			left: 0;
 			border-radius: inherit;
-			background: radial-gradient(
-				60rem circle at var(--xPos) var(--yPos),
-				rgba($ciBlue, 0.1),
-				transparent 35%
-			);
+			background: radial-gradient(60rem circle at var(--xPos) var(--yPos),
+						rgba($ciBlue, 0.1),
+						transparent 35%);
 			opacity: 0;
 			transition: all 0.15s ease-in-out;
 		}
+
 		.card-content {
 			background-color: #13161c;
 			border-radius: inherit;
 			transition: all 0.25s;
 			height: calc(100% - 0.1rem);
 			width: calc(100% - 0.1rem);
+			color: #e2e2e2;
+
+			h2{
+				width: 100%;
+				padding: 10px 20px;
+			} 
+			
+			p{
+				width: 100%;
+				color: #aaaaaa;
+				padding: 0 20px 0 25px;
+				font-size: smaller;
+			}
+			hr{
+				width: 80%;
+				outline: none;
+				border: none;
+				background: #424242;
+				height: 2px;
+				border-radius: 2px;
+			}
+			span{
+				color:#0099ff;
+				padding: 0 20px 0 25px;
+			}
 		}
 	}
 }
 
+.reveal {
+	position: relative;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
