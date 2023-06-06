@@ -47,8 +47,7 @@ export default {
       otherItems: [],
       hoveredIndex: null,
       otherGithubRepos: [
-        "https://api.github.com/repos/EinfachValle/Tierschutz-Eisenach",
-        "https://api.github.com/repos/EinfachValle/NeatBeat"
+        "https://api.github.com/repos/EinfachValle/MajorCloud"
       ]
     };
   },
