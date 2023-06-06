@@ -1,4 +1,5 @@
 <template>
+  <div class="impressum">
 <h2>Impressum</h2>
 <p>
   To Be Web Solutions i.G.<br />
@@ -10,8 +11,10 @@
   <br/>
   E-Mail: <a href="mailto:webmaster@tobe-websolutions.de">webmaster@tobe-websolutions.de</a><br />
   <br />
-  USt ID: //i.G. Das Unternehmen befindet sich in der Gründusngsphase
+  USt ID: //i.G. Das Unternehmen befindet sich in der Gründungsphase
 </p>
+
+  </div>
 </template>
 
 <script>
