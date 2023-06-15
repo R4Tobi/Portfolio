@@ -53,6 +53,12 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+
+  h1{
+    font-size: 32px;
+    text-decoration: underline;
+  }
 
   article {
     width: 360px;
@@ -60,7 +66,7 @@ div {
     text-align: left;
     h2{
         color: rgba(255, 255, 255, 0.534);
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
   }
 }

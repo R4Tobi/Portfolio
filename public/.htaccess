@@ -10,3 +10,10 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.tobe-websolutions\.de$ [NC]
+RewriteRule ^(.*)$ http://tobe-websolutions.de/$1 [L,R=301]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://tobe-websolutions.de/$1 [L,R=301]
