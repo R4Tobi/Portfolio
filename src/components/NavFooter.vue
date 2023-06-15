@@ -31,7 +31,8 @@
           </li>
           <li><a href="https://www.github.com/R4Tobi/">Github / R4Tobi</a></li>
           <li>
-            <a href="https://www.spotify.com/itobilp_dererste/">Spotify</a>
+            <a href="https://open.spotify.com/user/itobilp_dererste
+">Spotify</a>
           </li>
         </ul>
       </div>
