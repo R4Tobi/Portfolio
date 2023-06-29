@@ -60,6 +60,12 @@ const routes = [
     component: PageNotFound
   },
   {
+    path: "/pages/:catchAll(.*)",
+    redirect: (to) => {
+      return { path: to.path };
+    }
+  },
+  {
     path: "/:catchAll(.*)",
     redirect: "/404"
   },
