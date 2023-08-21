@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="left">
-      <div class="logo">To Be. <span>Web Solutions.</span></div>
+      <div class="logo">codex - Tobi</div>
       <button
         class="menu"
         onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.getElementById('menu').classList.toggle('opened')"
@@ -26,7 +26,6 @@
         <li><router-link to="/projects">Projekte</router-link></li>
         <li><router-link to="/skills">Skills</router-link></li>
         <li><router-link to="/socials">Socials</router-link></li>
-        <li><router-link to="/contact">Kontakt</router-link></li>
       </ul>
     </div>
   </div>

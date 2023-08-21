@@ -12,7 +12,6 @@
           <li><router-link to="/projects">Projekte</router-link></li>
           <li><router-link to="/skills">Skills</router-link></li>
           <li><router-link to="/socials">Socials</router-link></li>
-          <li><router-link to="/contact">Kontakt</router-link></li>
         </ul>
       </div>
       <div class="container">
@@ -38,7 +37,7 @@
       </div>
     </div>
     <hr class="second" />
-    <p>&#169; Copyright 2023, "To Be. Web Solutions"</p>
+    <p>&#169; Copyright 2023, "To Be. Web Solutions"/Tobias Baake </p>
   </footer>
 </template>
 

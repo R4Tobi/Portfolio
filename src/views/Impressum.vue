@@ -19,8 +19,11 @@
       <br />
       <strong>Umsatzsteuer-ID gem. § 27a UStG:</strong>
       <br />
-      DE
+      DE 362 015 054
       <br />
+      <strong>Steuernummer:</strong>
+      <br />
+      107/203/02905
       <h2>Kontakt:</h2>
       E-Mail:
       <a href="mailto:info@tobe-websolutions.de">info@tobe-websolutions.de</a>

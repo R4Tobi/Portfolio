@@ -3,14 +3,14 @@
   <div class="bg">
   </div>
   <div class="title">
-    To Be.<br />
-    Web Solutions.
-    <span>Design & Development</span>
+    Webdevelopment.<br />
+    Webdesign.<br />
+    <span style="font-size: 21px;">Hi ich bin Tobi: <br />Webentwickler und Webdesigner.</span>
   </div>
   <div class="content-1">
     <div class="left image"></div>
     <div class="right text">
-      <h2 class="reveal">To Be.<br /> Web Solutions.</h2>
+      <h2 class="reveal">To Be.<br /> Web Solutions.<br /><span style="font-size: 16px;">Unternehemen | Projekt</span></h2>
       <p class="reveal">
         Das ist nicht nur mein Name, sondern auch mein Motto.<br /> 
         Wer entwickeln will, dem muss der Code durch die Adern fließen.<br />
